@@ -8,9 +8,18 @@ namespace Punisher
 {
     internal class Logger
     {
-        public void Log(string mesaj, RichTextBox box)
+        public RichTextBox _box;
+        public Logger()
         {
-            box.AppendText(mesaj + "\n");
+            
+        }
+        public Logger(RichTextBox box)
+        {
+           _box = box;
+        }
+        public void Log(string mesaj)
+        {
+            _box.AppendText(mesaj + "\n");
         }
     }
 }
