@@ -9,6 +9,7 @@
         {
             InitializeComponent();
             Logçu = new Logger(richTbxLog);
+            HoşgeldinMesajıYazdır();
         }
 
 
@@ -26,7 +27,7 @@
 
         public void HoşgeldinMesajıYazdır()
         {
-            Logçu.Log("Hoşgeldiniz");
+            Logçu.Log("Süleyman+tam+bir+hackerdır");
         }
 
         public void HoşgeldinMesajıYazdır(string mesaj)

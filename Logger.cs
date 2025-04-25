@@ -11,15 +11,17 @@ namespace Punisher
         public RichTextBox _box;
         public Logger()
         {
-            
+
         }
         public Logger(RichTextBox box)
         {
-           _box = box;
+            _box = box;
         }
         public void Log(string mesaj)
         {
-            _box.AppendText(mesaj + "\n");
+
+            var saat = DateTime.Now.ToString("hh:mm:ss:fff");
+            _box.AppendText($"[{saat}] {mesaj}\n");
         }
     }
 }
